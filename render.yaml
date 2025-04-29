@@ -2,11 +2,19 @@ services:
   - type: web
     name: scanmark
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: chmod +x build.sh && ./build.sh
     startCommand: gunicorn minimal_app:app
     envVars:
       - key: FLASK_ENV
         value: production
       - key: SECRET_KEY
-        generateValue: true
+        value: c8e1e7a3b9d4f2a5e8c1d7b3a9f5e2d1
+      - key: FLASK_APP
+        value: minimal_app.py
+      - key: DEBUG
+        value: false
+      - key: SUPABASE_URL
+        value: https://aaluawvcohqfhevkdnuv.supabase.co
+      - key: SUPABASE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFhbHVhd3Zjb2hxZmhldmtkbnV2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIyNzY3MzcsImV4cCI6MjA1Nzg1MjczN30.kKL_B4sw1nwY6lbzgyPHQYoC_uqDsPkT51ZOnhr6MNA
     plan: free
