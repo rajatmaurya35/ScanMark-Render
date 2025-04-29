@@ -2,15 +2,15 @@ services:
   - type: web
     name: scanmark
     env: python
-    buildCommand: chmod +x build.sh && ./build.sh
-    startCommand: gunicorn minimal_app:app
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run.py
     envVars:
       - key: FLASK_ENV
         value: production
       - key: SECRET_KEY
         value: c8e1e7a3b9d4f2a5e8c1d7b3a9f5e2d1
       - key: FLASK_APP
-        value: minimal_app.py
+        value: run.py
       - key: DEBUG
         value: false
       - key: SUPABASE_URL
