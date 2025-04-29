@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: scanmark
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn minimal_app:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+    plan: free

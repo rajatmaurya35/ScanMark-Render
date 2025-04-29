@@ -1,0 +1,96 @@
+{
+    "students": {
+        "211040107001": {
+            "student_id": "211040107001",
+            "name": "Fardin Bhai",
+            "email": "211040107001@example.com",
+            "department": "Computer Science",
+            "branch": "Computer",
+            "semester": "8th",
+            "phone": "8957248144",
+            "address": "GPERi",
+            "bio": "President\n",
+            "created_at": "2025-04-27T13:05:41.347685",
+            "updated_at": "2025-04-28T16:15:34.638186"
+        }
+    },
+    "sessions": {
+        "physics-session-1": {
+            "id": "physics-session-1",
+            "subject": "Physics",
+            "faculty": "Shilpa Mam",
+            "branch": "IT",
+            "semester": "8th sem",
+            "date": "2025-04-28",
+            "time": "18:11",
+            "status": "active",
+            "description": "Physics lecture for IT department",
+            "created_at": "2025-04-28T18:11:32.013629",
+            "updated_at": "2025-04-29T14:53:54.270659"
+        },
+        "oops-session-1": {
+            "id": "oops-session-1",
+            "subject": "OOPS",
+            "faculty": "Avani Mam",
+            "branch": "Computer",
+            "semester": "3rd sem",
+            "date": "2025-04-27",
+            "time": "18:11",
+            "status": "active",
+            "description": "Object-Oriented Programming lecture for Computer students",
+            "created_at": "2025-04-28T18:11:32.029708",
+            "updated_at": "2025-04-29T14:53:52.113216"
+        },
+        "pps-vijay-sir-1745918662": {
+            "id": "pps-vijay-sir-1745918662",
+            "subject": "PPS",
+            "faculty": "Vijay Sir",
+            "branch": "IT",
+            "semester": "7th sem",
+            "date": "2025-04-29",
+            "time": "14:54",
+            "status": "active",
+            "description": "",
+            "created_at": "2025-04-29T14:54:22.960914"
+        }
+    },
+    "attendance": {
+        "211040107001_physics-session-1": {
+            "student_id": "211040107001",
+            "session_id": "physics-session-1",
+            "status": "present",
+            "timestamp": "2025-04-27T13:05:04.265007"
+        },
+        "211040107001_oops-session-1": {
+            "student_id": "211040107001",
+            "session_id": "oops-session-1",
+            "status": "present",
+            "timestamp": "2025-04-27T13:05:04.306801"
+        },
+        "admin_physics-session-1": {
+            "student_id": "admin",
+            "session_id": "physics-session-1",
+            "status": "present",
+            "timestamp": "2025-04-27T15:45:52.441786"
+        },
+        "admin_oops-session-1": {
+            "student_id": "admin",
+            "session_id": "oops-session-1",
+            "status": "present",
+            "timestamp": "2025-04-27T15:45:52.454324"
+        }
+    },
+    "attendance_lists": {
+        "list_20250429145335": {
+            "id": "list_20250429145335",
+            "session_id": "physics-session-1",
+            "session_name": "Physics - Shilpa Mam - IT - 8th sem",
+            "date": "2025-04-29",
+            "notes": "Demo attendance list",
+            "total_students": 25,
+            "present": 22,
+            "absent": 3,
+            "created_at": "2025-04-29T14:53:35.921918"
+        }
+    }
+}
